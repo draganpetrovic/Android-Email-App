@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "703921597144",
+    "firebase_url": "https://psu-2020---tim-16.firebaseio.com",
+    "project_id": "psu-2020---tim-16",
+    "storage_bucket": "psu-2020---tim-16.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:703921597144:android:df93fa29707d70349fc5ad",
+        "android_client_info": {
+          "package_name": "com.aleksandar69.psu2020_tim16"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "703921597144-6icnidkkf7i4bt8p8d1vidd4ig6lk0rm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aleksandar69.psu2020_tim16",
+            "certificate_hash": "11415661eb9d47f21fa44b9650d4ee98c5d50582"
+          }
+        },
+        {
+          "client_id": "703921597144-784vb02g4rq7b1l6epc1h20qrf4f3jqe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSIhRm4lcYAXG17nVCzTWJVBLUUg0VQsw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "703921597144-784vb02g4rq7b1l6epc1h20qrf4f3jqe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:actionViewClass="android.support.v7.widget.SearchView"
+    >
+
+<item
+    android:id="@+id/new_contact"
+    android:title="@string/new_contact"
+    android:icon="@drawable/baseline_person_add_white_24dp"
+    app:showAsAction="always"
+    android:orderInCategory="1"
+    />
+
+</menu>

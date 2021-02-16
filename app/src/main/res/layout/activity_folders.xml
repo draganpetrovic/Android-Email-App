@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.FoldersActivity"
+    android:orientation="vertical">
+
+
+
+    <include
+        android:id="@+id/folders_toolbar"
+        layout="@layout/toolbar_layout"/>
+
+
+
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/drawer_layout">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/main_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ListView
+                android:id="@+id/folders_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:divider="@android:color/transparent"
+                android:choiceMode="singleChoice"
+                android:clickable="true"
+                android:dividerHeight="10.0sp"
+                android:scrollbars="vertical" />
+
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_margin="10dp"
+                android:src="@drawable/baseline_add_black_24dp"
+                android:onClick="onClickFAB"
+                />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/nav_view"
+            app:menu="@menu/menu_nav"
+            app:headerLayout="@layout/nav_layout"
+            android:layout_gravity="start"
+            android:onClick="onProfileClicked"/>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/email_send_button"
+        android:icon="@drawable/baseline_send_white_24dp"
+        android:orderInCategory="2"
+        android:title="@string/send_message_menu"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/email_cancel_button"
+        android:icon="@drawable/baseline_cancel_white_24dp"
+        android:orderInCategory="1"
+        android:title="@string/cancel_sending_menu"
+        app:showAsAction="ifRoom"/>
+
+
+</menu>

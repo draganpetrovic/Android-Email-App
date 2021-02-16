@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CreateEmailActivity"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_layout"
+        android:id="@+id/create_email"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/to_edit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/message_to" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cc_layout_createnew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_cc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/message_cc" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/bcc_layout_createnew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_bcc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/message_bcc" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/message_subject" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/email_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/message_content"
+        android:gravity="top"
+        android:layout_weight="1"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tags_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tags_edit" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Note: Use ';' to separate recipients and tags"
+        android:textColor="#ff6666"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:textSize="12dp"
+        android:background="#4700b3"
+        android:id="@+id/add_attach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subject"
+        android:layout_toRightOf="@id/attachments"
+        android:text="Attach Files"
+        android:onClick="openFileClick"/>
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attached files:"/>
+        <TextView
+            android:id="@+id/attached_files"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        />
+    </LinearLayout>
+
+
+</LinearLayout>

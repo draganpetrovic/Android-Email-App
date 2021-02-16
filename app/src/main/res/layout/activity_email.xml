@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activities.EmailActivity">
+
+        <include
+            android:id="@+id/email_toolbar"
+            layout="@layout/toolbar_layout" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/from"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/message_from"
+                android:background="@drawable/back"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/from_tv"
+                android:background="@drawable/back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_toEndOf="@id/from"
+                android:layout_toRightOf="@id/from"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/subject"
+                android:background="@drawable/back"
+
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/message_subject"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/subject_tv"
+                android:background="@drawable/back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_toEndOf="@id/subject"
+                android:layout_toRightOf="@id/subject"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/to"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="To"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/to_tv"
+                android:background="@drawable/back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_toEndOf="@id/to"
+                android:layout_toRightOf="@id/to"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/cc"
+                android:background="@drawable/back"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="CC"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/cc_tv"
+                android:background="@drawable/back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_toEndOf="@id/cc"
+                android:layout_toRightOf="@id/cc"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@id/content"
+                    android:background="@drawable/back"
+                    android:layout_width="match_parent"
+                    android:layout_height="540dp"
+                    android:foregroundGravity="center_horizontal"
+                    android:hint="@string/message_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+            </ScrollView>
+            <!--        <TextView
+                        android:id="@+id/tagstv"
+                        android:layout_width="70dp"
+                        android:layout_height="match_parent"
+                        android:text="Tags:"
+                        android:layout_toStartOf="@id/tags"
+                        android:layout_toLeftOf="@id/tags"
+                        android:layout_below="@id/content"/>
+
+                    <TextView
+                        android:hint="Tags"
+                        android:id="@+id/tags"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/content"/>-->
+
+            <!--        <Button
+                        android:id="@+id/attachments"
+                        android:text="Click me to convert"
+                        android:layout_below="@id/tags"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="decodeOnClick"/>-->
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tag"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Tags:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/tag_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_toEndOf="@id/tag"
+                android:layout_toRightOf="@id/tag"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:textSize="13dp"
+                android:background="#4700b3"
+                android:id="@+id/attachments"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentBottom="true"
+                android:onClick="decodeOnClick"
+                android:gravity="center_vertical"
+                android:layout_centerHorizontal="true"
+                android:text="Download attachments" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

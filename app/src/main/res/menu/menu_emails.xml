@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/create_message"
+        android:title="@string/create_message_title"
+        android:icon="@drawable/baseline_add_white_24dp"
+        android:orderInCategory="2"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/search_emails"
+        android:title="@string/search_emails"
+        android:icon="@drawable/baseline_search_white_24dp"
+        android:orderInCategory="1"
+        app:showAsAction="collapseActionView|always"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+<!--
+    <item
+        android:id="@+id/sort_by_asc"
+        android:title="Sort Ascending"
+        android:icon="@drawable/baseline_keyboard_arrow_down_white_24dp"
+        android:orderInCategory="3"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/sort_by_desc"
+        android:title="Sort Descending"
+        android:icon="@drawable/baseline_keyboard_arrow_up_white_24dp"
+        android:orderInCategory="4"
+        app:showAsAction="always" />
+-->
+
+
+</menu>

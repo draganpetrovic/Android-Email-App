@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_marginTop="4dp"
+        android:id="@+id/linija1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentTop="true"
+        android:background="#7b00ff" />
+
+    <TextView
+        android:textAlignment="center"
+        android:layout_marginTop="4dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/columnFrom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/listViewFromHeight"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:text="test@test.com"
+        android:textSize="15dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#f2e6ff"
+        android:layout_above="@id/columnSubject"/>
+
+    <TextView
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:id="@+id/columnSubject"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/listViewSubjectHeight"
+        android:layout_below="@id/columnFrom"
+        android:text="subject"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/columnSubject"
+        android:background="#f2e6ff"/>
+
+    <TextView
+        android:id="@+id/columnContent"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/listViewContentHeight"
+        android:layout_below="@id/columnSubject"
+        android:text="content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="#868a91" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#f2e6ff"
+        android:layout_below="@id/columnContent"/>
+
+    <TextView
+        android:id="@+id/columnDate"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/columnContent"
+        android:gravity="center_horizontal"
+        android:text="date"
+        android:textColor="#5c6066" />
+
+    <TextView
+        android:id="@+id/tags_listview"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/columnDate"
+        android:layout_marginBottom="10dp"
+        android:text="Tags: "/>
+
+    <TextView
+        android:id="@+id/linija"
+        android:layout_width="30dp"
+        android:background="#f2e6ff"
+        android:layout_height="190dp"
+        android:layout_below="@id/linija1"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#7b00ff"
+        android:layout_below="@id/linija"
+         />
+
+
+</RelativeLayout>

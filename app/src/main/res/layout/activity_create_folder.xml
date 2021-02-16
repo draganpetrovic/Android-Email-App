@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.CreateFolderActivity">
+
+    <include
+        android:id="@+id/toolbar_create_folder"
+        layout="@layout/toolbar_layout"/>
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/folder_name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/folder_name"
+        android:inputType="text"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/folder_condition"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Condition"
+        android:inputType="text"/>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true"/>
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Operation" />
+
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"/>
+
+</LinearLayout>

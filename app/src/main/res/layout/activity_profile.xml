@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ProfileActivity">
+
+    <include
+        android:id="@+id/toolbar_profile"
+        layout="@layout/toolbar_layout"/>
+
+
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/main_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:id="@+id/imageViewProfile"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:paddingTop="@dimen/nav_header_vertical_spacing"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/person_icon" />
+
+            <LinearLayout
+                android:background="@drawable/back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text= "Display Name:"
+                    style="@style/TextAppearance.AppCompat.Large"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/displayNameProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hint_display_name"
+
+                    style="@style/TextAppearance.AppCompat.Large"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text= "E-mail:"
+                    style="@style/TextAppearance.AppCompat.Large"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/emailProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Email"
+                    style="@style/TextAppearance.AppCompat.Large"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/back"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text= "Username: :"
+                    style="@style/TextAppearance.AppCompat.Large"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/usernameProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+
+                    android:text="Username"
+                    style="@style/TextAppearance.AppCompat.Large"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <Button
+                    android:padding="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Switch account"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:textSize="12dp"
+                    android:onClick="switchAcc"
+                    android:background="#4700b3"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/nav_layout"
+            app:menu="@menu/menu_nav" />
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>
